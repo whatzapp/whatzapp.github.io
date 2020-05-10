@@ -1,0 +1,307 @@
+body {
+  background-color: #EDEDED;
+  margin:0;
+ padding:0;
+}
+
+.header {
+  position: fixed;
+  width: 26%;
+  /*border:1px solid red;*/
+  font-family: 'arial', sans-serif;
+  font-size: 16px;
+  padding: 2vh;
+  line-height: 120%
+}
+
+.grid {
+display: grid;
+grid-template-columns: 1fr;
+float: right;
+width:100%;
+/*padding-top: 250px;*/
+}
+
+.cell {
+  height:100%;
+  /*border:1px solid green;*/
+  overflow: visible;
+  bottom: 0px;
+}
+
+.cell img {
+  width: 60%;
+  float: right;
+  object-fit: scale-down;
+  text-align: left;
+  padding-top: 1px;
+  padding-left: 100vh;
+}
+
+.full  {
+  height: 100vh;
+ width: auto;
+ float: right;
+ padding-right: 0;
+ }
+
+.annee {
+  width: 65%;
+  height:auto;
+  font-size:60%;
+/*  border:1px solid blue;*/
+  color: black;
+  float: right;
+  overflow: auto;
+  font-family: 'arial', sans-serif;
+  line-height: 142%;
+  margin-bottom: -1px;
+  color: red;
+  /* font-style: italic;*/
+}
+
+.texte {
+  width: 92.4%;
+/*  border:1px solid green;*/
+  float: right;
+  color: black;
+  overflow: auto;
+  font-family: 'arial', sans-serif;
+  font-size: 16px;
+  line-height: 70%;
+  /* font-style: italic;*/
+}
+h1 {
+  font-family: 'arial', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: normal;
+  display:inline
+}
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 60%;
+  font-weight: normal;
+  display:inline
+}
+
+.right {
+position: fixed;
+font-family: 'arial', sans-serif;
+font-size: 16px;
+color: white;
+text-align: right;
+right:0px;
+padding: 2vh;
+}
+
+.bottomleft {
+position: fixed;
+font-family: 'arial', sans-serif;
+font-size: 16px;
+color: black;
+text-align: right;
+left:0px;
+bottom: 0px;
+padding: 2vh;
+}
+
+.sup {
+vertical-align: top; position:
+relative; top: -0.5em;
+font-size: 60%;
+}
+
+a:link {
+color: black;
+text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+color: black;
+text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+color: #ff0000;
+text-decoration: none;
+}
+
+/* selected link */
+a:active {
+color: grey;
+text-decoration: none;
+}
+
+.bloc{
+position: fixed;
+width: auto;
+height: 41vh;
+/*border:1px solid black;*/
+margin-top: 56vh;
+margin-left: 2vh;
+
+}
+.blanc{
+background: white;
+}
+
+.dimension {
+  width: 65%;
+  height:auto;
+  font-size:60%;
+/*  border:1px solid blue;*/
+  color: black;
+  float: right;
+  text-align: left;
+  font-family: 'arial', sans-serif;
+  line-height: 100%;
+  margin-top: -9px;
+}
+
+.alignright {
+	float: right;
+  padding-right: 2px;
+  line-height: 160%;
+}
+
+@media (max-width: 700px) {
+
+.header {
+  position: fixed;
+  float: center;
+  width: auto;
+  background-color: #EDEDED;
+  height:auto;
+  font-family: 'arial', sans-serif;
+  font-size: 14px;
+
+}
+
+.grid {
+display: grid;
+padding-left: 0vh;
+grid-template-columns: 1fr;
+padding-top: 23vh;
+
+}
+
+.cell {
+/*border:1px solid violet;*/
+
+}
+
+.cell img {
+
+ min-width: 100%;
+ max-width: 100%;
+ height: auto;
+  float: right;
+  object-fit: scale-down;
+  text-align: left;
+  padding-top: 1px;
+  padding-left: 0px;
+
+}
+
+.full img {
+
+ height: 90vh;
+ object-fit: scale-down;
+ text-align: left;
+ margin:0
+ border: solid 1px blue;
+
+}
+
+.annee {
+width: 99%;
+height: auto;
+color: black;
+overflow: auto;
+font-family: 'arial', sans-serif;
+line-height: 165%;
+margin-bottom: -0.4%;
+margin-left: 5%;
+color: red;
+/* font-style: italic;*/
+}
+
+.dimension {
+  width: 99%;
+  height:auto;
+  font-size:60%;
+/*  border:1px solid blue;*/
+  color: black;
+  float: right;
+  text-align: left;
+  font-family: 'arial', sans-serif;
+  line-height: 100%;
+  margin-top: -9px;
+}
+
+.texte {
+width: 90%;
+text-align: left;
+color: black;
+overflow: auto;
+font-family: 'arial', sans-serif;
+line-height: 75%;
+font-size: 16px;
+/* font-style: italic;*/
+}
+
+.bottomleft {
+position: fixed;
+font-family: 'arial', sans-serif;
+font-size: 14px;
+color: black;
+text-align: right;
+padding: 2vh;
+left:0px;
+bottom:0px;
+}
+
+.right {
+position: fixed;
+font-family: 'arial', sans-serif;
+font-size: 14px;
+color: white;
+text-align: right;
+padding-right: 2vh;
+right:0px;
+bottom:0px;
+z-index: 1;
+}
+
+.sup {
+vertical-align: top;
+position: relative;
+top: -0.5em;
+font-size: 60%;
+}
+
+h1 {
+font-family: 'arial', sans-serif;
+font-size: 14px;
+text-decoration: none;
+font-weight: normal;
+display:inline
+}
+
+h2 {
+font-family: 'Arial', sans-serif;
+font-size: 60%;
+font-weight: normal;
+text-decoration: none;
+display:inline
+}
+.alignright {
+	float: right;
+  margin-top: 0.5%;
+  line-height: 100%;
+}
+}
