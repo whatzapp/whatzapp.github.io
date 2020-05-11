@@ -244,9 +244,13 @@ sup {
 	}
 
 	#container > header {
-		position: relative;
+		position: fixed;
 		background-color: #ededed;
 		max-width: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		opacity: 1;
 	}
 
 	#container > #selected.fixed {
