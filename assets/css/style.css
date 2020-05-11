@@ -122,15 +122,6 @@ sup {
 #container > section > figure {
 	width: 100%;
 	max-width: 60%;
-	/* float: right; */
-	display: block;
-	float: right;
-}
-
-#container > section > figure {
-	width: 100%;
-	max-width: 60%;
-	/* float: right; */
 	display: block;
 	float: right;
 }
@@ -146,6 +137,7 @@ sup {
 	justify-content: center;
 	align-items: center;
 	overflow-x: hidden;
+	position: relative;
 }
 
 #container > section > figure .portrait img,
@@ -172,6 +164,13 @@ sup {
 	opacity: 0;
 	/* transform: translateY(100px); */
 }
+
+.lazyloading {
+	opacity: 1;
+	transition: opacity 300ms;
+	background-color: #fff;
+}
+
 .lazyloaded {
 	opacity: 1;
 	transition: all 300ms;
@@ -276,8 +275,4 @@ sup {
 		display: inline-block;
 		margin-left: 0;
 	}
-}
-
-@media only screen and (max-width: 33.75em) {
-	/* 540px */
 }
