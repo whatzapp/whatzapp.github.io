@@ -5,6 +5,7 @@ lazySizes.init();
 
 $(function() {
 	var isMobile = false;
+	var didScroll;
 	var lastScrollTop = 0;
 	var delta = 5;
 	var header = $('header');
@@ -33,18 +34,27 @@ $(function() {
 		section.css('margin-top', header.height());
 	}
 
-	$(window).scroll(function() {
-		var st = $(this).scrollTop();
-		if (isMobile) {
-			if (Math.abs(lastScrollTop - st) <= delta) return;
-			if (st > lastScrollTop && st > header.outerHeight()) {
-				header.fadeOut(300);
-			} else {
-				header.fadeIn(300);
-			}
-			lastScrollTop = st;
-		}
+	$(window).scroll(function(e) {
+		didScroll = true;
 	});
+
+	setInterval(function() {
+		if (didScroll) {
+			hasScrolled();
+			didScroll = false;
+		}
+	}, 250);
+
+	function hasScrolled() {
+		var st = $(window).scrollTop();
+		if (Math.abs(lastScrollTop - st) <= delta) return;
+		if (st > lastScrollTop && st > header.outerHeight()) {
+			header.fadeOut(300);
+		} else {
+			header.fadeIn(300);
+		}
+		lastScrollTop = st;
+	}
 
 	$(window).resize(function() {
 		detectMobile();
