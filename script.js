@@ -39,7 +39,7 @@ $(function() {
 	});
 
 	setInterval(function() {
-		if (isMbile && didScroll) {
+		if (isMobile && didScroll) {
 			hasScrolled();
 			didScroll = false;
 		}
