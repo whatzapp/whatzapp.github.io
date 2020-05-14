@@ -183,7 +183,7 @@ sup {
 #container > section > figure figcaption {
 	font-size: 10px;
 	line-height: 1.2;
-	padding: 0px 2px 2px 0px;
+	padding: 3px 2px 0 0;
 	display: block;
 }
 
