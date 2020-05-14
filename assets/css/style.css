@@ -69,10 +69,6 @@ sup {
 	line-height: 1.2;
 }
 
-.year span::after {
-	content: "\2197";
-}
-
 #container {
 }
 
