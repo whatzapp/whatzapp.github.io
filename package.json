@@ -23,6 +23,6 @@
 	"homepage": "https://github.com/whatzapp/whatzapp.github.io#readme",
 	"dependencies": {
 		"jquery": "^3.5.1",
-		"lazysizes": "^5.2.0"
+		"lazysizes": "^5.2.1"
 	}
 }
